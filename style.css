@@ -1,0 +1,120 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+:root {
+  --hue-neutral: 187;
+  --hue-wrong: 0;
+  --hue-correct: 145;
+
+  --slide:url("media/rice0.svg");
+  --slide-1:url("media/rice10.svg");
+  --slide-2:url("media/rice20.svg");
+  --slide-3:url("media/rice30.svg");
+  --slide-4:url("media/rice40.svg");
+  --slide-5:url("media/rice50.svg");
+  --slide-6:url("media/rice60.svg");
+  --slide-7:url("media/rice70.svg");
+  --slide-8:url("media/rice80.svg");
+  --slide-9:url("media/rice90.svg");
+  --slide-10:url("media/rice100.svg");
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0, 0%, 0%);
+  background-image: url(media/plant.png), var(--slide), url(media/globe.png), url(media/galaxy.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 25%, 15%, 60%, cover;
+  background-position: 35% 120%,50% 100%, 50% -200%, center;
+}
+
+.container {
+  width: 800px;
+  max-width: 20%;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  margin-top: -25%;
+  margin-left: 40%;
+  margin-right: 40%
+}
+
+.question{
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 10px;
+  margin: 20px 0px;
+}
+
+.btn {
+  --hue: var(--hue-neutral);
+  border: 2px solid hsl(195, 100%, 60%);
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.btn:hover {
+  border-color: black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+  background-color: hsl(var(--hue), 100%, 50%);
+  color: black;
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+  background-color: hsl(var(--hue), 100%, 50%);
+}
+
+.start-btn, .next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+
+}
+
+.globe {
+    margin-bottom: -120%;
+}
+
+.plant{
+
+}
+
+.bowl{
+
+}
